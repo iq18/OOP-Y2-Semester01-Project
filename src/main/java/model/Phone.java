@@ -14,11 +14,17 @@ package model;
  */
 
 public class Phone extends Product {
-
+	
+	/**
+	 * Attributes
+	 */
 	private String make;
 	private String model;
 	private int storageSpace;//posible replace with enum
 	
+	/**
+	 * Constructor
+	 */
 	public Phone(String name, String description, double price, String make, String model, int storageSpace) {
 		super(name, description, price);
 		this.make = make;
@@ -26,11 +32,39 @@ public class Phone extends Product {
 		this.storageSpace = storageSpace;
 	}
 	
+	/**
+	 * Getters/Setters
+	 */
+	
+	public String getMake() {
+		return make;
+	}
+
+	public void setMake(String make) {
+		this.make = make;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	public int getStorageSpace() {
+		return storageSpace;
+	}
+
+	public void setStorageSpace(int storageSpace) {
+		this.storageSpace = storageSpace;
+	}
+
+	/**
+	 * Method to print Phone details
+	 */
 	public void print() {
 		super.print();
-		System.out.println("Make: " + this.make + "\nModel: " + this.model + "\nStorage: " + this.storageSpace);
+		System.out.println("Make: " + this.make + "\nModel: " + this.model + "\nStorage: " + this.storageSpace + "GB");
 	}
-	
-	
-	
 }

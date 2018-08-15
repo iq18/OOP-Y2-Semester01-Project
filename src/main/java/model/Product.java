@@ -64,7 +64,10 @@ public abstract class Product {
 		return productID;
 	}
 	
+	/**
+	 * Method to print Product details
+	 */
 	public void print() {
-		System.out.println("ID: " + this.productID + "\nName: " + this.name + "\nDescription: " + this.description + "\nPrice " + this.price);
+		System.out.println("\nID: " + this.productID + "\nName: " + this.name + "\nDescription: " + this.description + "\nPrice " + this.price);
 	}
 }

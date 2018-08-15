@@ -17,9 +17,13 @@ import model.Phone;
 public class Test {
 
 	public static void main(String[] args) {
-		 Phone p1 = new Phone("Samsung","HD",230.00,"Samsung","S7",128);
-		 
-		 p1.print();
+
+		// Test Objects
+		Phone p1 = new Phone("Phone", "HD", 230.00, "Samsung", "S7", 128);
+		Phone p2 = new Phone("Phone", "Lightweight", 650.00, "Apple", "X", 64);
+		// print Objects
+		p1.print();
+		p2.print();
 	}
 
 }
