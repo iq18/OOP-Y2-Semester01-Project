@@ -67,4 +67,5 @@ public class Phone extends Product {
 		super.print();
 		System.out.println("Make: " + this.make + "\nModel: " + this.model + "\nStorage: " + this.storageSpace + "GB");
 	}
+
 }

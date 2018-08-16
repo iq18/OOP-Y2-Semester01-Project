@@ -70,4 +70,5 @@ public abstract class Product {
 	public void print() {
 		System.out.println("\nID: " + this.productID + "\nName: " + this.name + "\nDescription: " + this.description + "\nPrice " + this.price);
 	}
+
 }
