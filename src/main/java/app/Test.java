@@ -1,6 +1,8 @@
 package app;
 
 import model.Phone;
+import model.TV;
+import model.TVType;
 
 
 /**
@@ -21,9 +23,12 @@ public class Test {
 		// Test Objects
 		Phone p1 = new Phone("Phone", "HD", 230.00, "Samsung", "S7", 128);
 		Phone p2 = new Phone("Phone", "Lightweight", 650.00, "Apple", "X", 64);
+		
+		TV t1 = new TV("TV","Large screen",559.00,"Toshiba",55,TVType.LED,true);
 		// print Objects
 		p1.print();
 		p2.print();
+		t1.print();
 	}
 
 }
