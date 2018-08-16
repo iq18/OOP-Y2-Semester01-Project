@@ -28,7 +28,7 @@ public class ProductDB {
 	 * @return
 	 */
 	public ArrayList<Product> getProductList() {
-		return (ArrayList)this.productsList;
+		return (ArrayList<Product>)this.productsList;
 	}
 	
 	/**
