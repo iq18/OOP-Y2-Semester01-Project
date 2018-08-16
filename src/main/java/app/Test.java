@@ -25,30 +25,37 @@ public class Test {
 		// Test Objects
 		Phone p1 = new Phone("Phone", "HD", 230.00, "Samsung", "S7", 128);
 		Phone p2 = new Phone("Phone", "Lightweight", 650.00, "Apple", "X", 128);
-
+		Phone p3 = new Phone("Phone", "Lightweight", 750.00, "Apple", "X", 128);
 		TV t1 = new TV("TV", "Large screen", 559.00, "Toshiba", 55, TVType.LED, true);
+		
 		// print Objects
 		p1.print();
 		p2.print();
 		t1.print();
 
-		Phone p3 = new Phone("Phone", "Lightweight", 750.00, "Apple", "X", 128);
-
+		//DB Object to hold list of products
 		ProductDB db = new ProductDB();
+		
+		//Test functionality
+		//add Products to ProductDB list
 		db.addProduct(p1);
 		db.addProduct(p2);
 		db.addProduct(t1);
 		db.addProduct(p3);
-
-		/*
-		 * for(Product p : db.getProductList()) { System.out.println(p.getName() + " " +
-		 * p.getProductID()); }
-		 */
+		//remove product
 		db.removeProduct(p2);
+		//find Product
 		Product a = db.findProduct(p2);
-		if(a != null) {
-			System.out.println("Product found");
+		//inform user product found or not
+		String result =  (a != null)? "Product found" : "Product not found";
+		System.out.println(result);
+		//attempt to remove Product not in List
+		db.removeProduct(p2);
+		//display all products
+		for(Product p : db.getProductList()) { 
+			p.print(); 
 		}
+		 
 		
 	}
 

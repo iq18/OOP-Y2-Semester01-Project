@@ -23,25 +23,54 @@ public class ProductDB {
 		System.out.println("DB made");
 	}
 	
+	/**
+	 * Getter to access list of Products
+	 * @return
+	 */
 	public ArrayList<Product> getProductList() {
 		return (ArrayList)this.productsList;
 	}
 	
+	/**
+	 * Method to add a Product to List
+	 * @param p Product to add
+	 */
 	public void addProduct(Product p) {
-		this.productsList.add(p);
+		// use find method to avoid adding duplicate products
+		if (findProduct(p) == null) {
+			this.productsList.add(p);
+		} else {
+			System.out.println("Product already exists");
+		}
 	}
 	
+	/**
+	 * Method to remove a Product
+	 * @param p Product to remove
+	 */
 	public void removeProduct(Product p) {
-		this.productsList.remove(p);
+		
+		if (findProduct(p) == null) {
+			System.out.println("Product doesn't exist");
+		} else {
+			this.productsList.remove(p);
+		}
+		
 	}
 	
+	/**
+	 * Method to find a Product
+	 * @param p Product to find
+	 * @return found Product/null
+	 */
 	public Product findProduct(Product p) {
+		//iterate over List comparing Objects | return found Product
 		for (Product a : this.getProductList()) {
 			if (p.equals(a)) {
 				return p;
 			}
 		}
-		System.out.println("Product not in records");
+		//null if Product not found
 		return null;
 	}
 }
