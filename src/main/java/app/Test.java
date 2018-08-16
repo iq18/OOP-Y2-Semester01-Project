@@ -26,6 +26,10 @@ public class Test {
 		Phone p1 = new Phone("Phone", "HD", 230.00, "Samsung", "S7", 128);
 		Phone p2 = new Phone("Phone", "Lightweight", 650.00, "Apple", "X", 128);
 		Phone p3 = new Phone("Phone", "Lightweight", 750.00, "Apple", "X", 128);
+<<<<<<< HEAD
+=======
+
+>>>>>>> c4878e9fdaa9376e922ab044c8cffd2c26912e8b
 		TV t1 = new TV("TV", "Large screen", 559.00, "Toshiba", 55, TVType.LED, true);
 		
 		// print Objects
@@ -37,12 +41,19 @@ public class Test {
 		ProductDB db = new ProductDB();
 		
 		//Test functionality
+<<<<<<< HEAD
 		//add Products to ProductDB list
+=======
+>>>>>>> c4878e9fdaa9376e922ab044c8cffd2c26912e8b
 		db.addProduct(p1);
 		db.addProduct(p2);
 		db.addProduct(t1);
 		db.addProduct(p3);
+<<<<<<< HEAD
 		//remove product
+=======
+
+>>>>>>> c4878e9fdaa9376e922ab044c8cffd2c26912e8b
 		db.removeProduct(p2);
 		//find Product
 		Product a = db.findProduct(p2);
@@ -56,6 +67,13 @@ public class Test {
 			p.print(); 
 		}
 		 
+		
+		
+		
+		/*
+		 * for(Product p : db.getProductList()) { System.out.println(p.getName() + " " +
+		 * p.getProductID()); }
+		 */
 		
 	}
 
