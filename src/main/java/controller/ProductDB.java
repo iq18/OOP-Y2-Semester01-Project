@@ -36,7 +36,7 @@ public class ProductDB {
 	 * @param p Product to add
 	 */
 	public void addProduct(Product p) {
-		// use find method to avoid adding duplicate products
+		// use find method to avoid adding duplicate products | null means Product not already in list
 		if (findProduct(p) == null) {
 			this.productsList.add(p);
 		} else {
@@ -49,7 +49,7 @@ public class ProductDB {
 	 * @param p Product to remove
 	 */
 	public void removeProduct(Product p) {
-		
+		//if find returns null Product not in list
 		if (findProduct(p) == null) {
 			System.out.println("Product doesn't exist");
 		} else {

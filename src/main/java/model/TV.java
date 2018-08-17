@@ -66,7 +66,7 @@ public class TV extends Product {
 	}
 	
 	/**
-	 * Method to print TV details
+	 * Method to print full TV details
 	 */
 	public void print() {
 		//assign yes/No value for TV 3D capability
@@ -74,5 +74,12 @@ public class TV extends Product {
 		super.print();
 		System.out.println("Make: " + make + "\nScreenSize: " + screenSize + "\nType: " + type + "\n3D: " + isThreeD);
 	}
+
+	@Override
+	public String toString() {
+		return " Make: " + make + " ScreenSize: " + screenSize + " inch";
+	}
+	
+	
 
 }

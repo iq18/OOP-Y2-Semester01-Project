@@ -1,5 +1,6 @@
 package app;
 
+import controller.OrderDetails;
 import controller.ProductDB;
 import model.Phone;
 import model.Product;
@@ -55,6 +56,12 @@ public class Test {
 		for(Product p : db.getProductList()) { 
 			p.print(); 
 		}
+		
+		OrderDetails od1 = new OrderDetails(p1,5);
+		OrderDetails od2 = new OrderDetails(t1,7);
+		
+		od1.print();
+		od2.print();
 		 
 		
 	}

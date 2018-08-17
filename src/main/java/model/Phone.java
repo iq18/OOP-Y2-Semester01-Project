@@ -61,11 +61,19 @@ public class Phone extends Product {
 	}
 
 	/**
-	 * Method to print Phone details
+	 * Method to print full Phone details
 	 */
 	public void print() {
 		super.print();
 		System.out.println("Make: " + this.make + "\nModel: " + this.model + "\nStorage: " + this.storageSpace + "GB");
 	}
+
+	@Override
+	public String toString() {
+		//return string of main phone attributes
+		return " Make: " + make + " Model: " + model + " StorageSpace: " + storageSpace + "GB";
+	}
+	
+	
 
 }
