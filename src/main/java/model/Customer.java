@@ -46,6 +46,20 @@ public class Customer {
 		return (ArrayList<Order>)customerOrders;
 	}
 	
+	public void printCustomerOrders(Customer c) {
+
+		System.out.println("\nOrders for " + c.getName() + "\n---------------------");
+
+		ArrayList<Order> cOrders = c.getCustomerOrders();
+		if (c.getCustomerOrders().isEmpty()) {
+			System.out.println("\nNo Orders for " + c.getName());
+		} else {
+			for (Order o : cOrders) {
+				System.out.println(o);
+			}
+		}
+	}
+	
 	
 	
 	
