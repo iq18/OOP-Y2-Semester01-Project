@@ -46,6 +46,10 @@ public class Customer {
 		return (ArrayList<Order>)customerOrders;
 	}
 	
+	public void addOrder() {
+		
+	}
+	
 	public void printCustomerOrders(Customer c) {
 
 		System.out.println("\nOrders for " + c.getName() + "\n---------------------");
