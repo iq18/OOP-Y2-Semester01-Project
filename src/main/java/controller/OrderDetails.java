@@ -51,7 +51,7 @@ public class OrderDetails {
 	/**
 	 * Method to print OrderDetails based on type of product
 	 */
-	public void print() {
+	public void printOrderDetail() {
 		//check to see which type of Product | create instance of type | print relevant details for order
 		if(this.product instanceof Phone) {
 			Phone p = (Phone)this.product;

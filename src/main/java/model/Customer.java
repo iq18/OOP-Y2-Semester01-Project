@@ -46,20 +46,19 @@ public class Customer {
 		return (ArrayList<Order>)customerOrders;
 	}
 	
-	public void addOrder() {
-		
+	public void addCustomerOrder(Order o) {
+		customerOrders.add(o);
 	}
 	
-	public void printCustomerOrders(Customer c) {
-
-		System.out.println("\nOrders for " + c.getName() + "\n---------------------");
-
-		ArrayList<Order> cOrders = c.getCustomerOrders();
-		if (c.getCustomerOrders().isEmpty()) {
-			System.out.println("\nNo Orders for " + c.getName());
+	public void printCustomerOrders() {
+		
+		ArrayList<Order> cOrders = this.getCustomerOrders();
+		if (this.getCustomerOrders().isEmpty()) {
+			System.out.println("\nNo Orders for " + this.getName());
 		} else {
+			System.out.println("\nOrders for " + this.getName() + "\n---------------------");
 			for (Order o : cOrders) {
-				System.out.println(o);
+				o.printOrders();
 			}
 		}
 	}

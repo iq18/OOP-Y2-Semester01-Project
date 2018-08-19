@@ -30,6 +30,13 @@ public class Order {
 	public void addOrder(Product p, int quantity) {
 		this.orders.add(new OrderDetails(p,quantity));
 	}
+	public void printOrders() {
+		//iterate through order - print order details objects
+		//use printOrderDetail
+		for(OrderDetails od : orders) {
+			od.printOrderDetail();
+		}
+	}
 	
 	
 
