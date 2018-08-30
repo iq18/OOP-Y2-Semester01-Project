@@ -73,4 +73,20 @@ public class ProductDB {
 		//null if Product not found
 		return null;
 	}
+	
+	/**
+	 * Method to find a Product
+	 * @param id ProductID of Product to find
+	 * @return found Product/null
+	 */
+	public Product findProductByID(int id) {
+		//iterate over List comparing Objects | return found Product
+		for (Product a : this.getProductList()) {
+			if (a.getProductID() == id) {
+				return a;
+			}
+		}
+		//null if Product not found
+		return null;
+	}
 }
