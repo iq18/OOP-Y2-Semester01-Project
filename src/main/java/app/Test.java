@@ -84,11 +84,11 @@ public class Test {
 		
 		//****************************MENU***************************************************
 		
-				//loop control variable
-				boolean exit = false;
+		//loop control variable
+		boolean exit = false;
 				
-				//variable for switch
-				int choice = 0;
+		//variable for switch
+		int choice = 0;
 				
 		do {
 			// display menu to user

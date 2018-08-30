@@ -20,7 +20,7 @@ public class Phone extends Product {
 	 */
 	private String make;
 	private String model;
-	private int storageSpace;//posible replace with enum
+	private int storageSpace;
 	
 	/**
 	 * Constructor
